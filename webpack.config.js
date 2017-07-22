@@ -64,7 +64,10 @@ module.exports = {
 		],
 	},
 	plugins: [
-		new CopyWebPackPlugin([{ from: 'source/index.html', to: 'index.html' }]),
+		new CopyWebPackPlugin([
+			{ from: 'source/index.html', to: 'index.html' },
+			{ from: 'source/images', to: 'images' },
+		]),
 		new webpack.DefinePlugin({
 			'process.env': {
 				NODE_ENV: JSON.stringify('production'),

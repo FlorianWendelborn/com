@@ -1,15 +1,19 @@
 // region import
 import { h } from 'hyperapp'
 
+// components
+import Footer from '../components/footer'
+import Header from '../components/header'
+
 // internal
 import '../style.sass'
 // endregion
 
 export default () =>
 	<div class="app">
-		<header>Header</header>
-		<h1>Title</h1>
-		<main>Main</main>
+		<Header />
+		<h1>Dodekeract.com</h1>
+		<main>Some Content</main>
 		<aside>Sidebar</aside>
-		<footer>Footer</footer>
+		<Footer />
 	</div>

@@ -1,22 +1,40 @@
+$strong: #444
+$subtle: #EEE
+$padding: 16px
+
+body
+	margin: 0
+
+body, html
+	min-height: 100vh
+
 .app
+	min-height: 100vh
 	display: grid
-	grid-template-columns: 256px auto
-	grid-template-rows: auto
+	grid-template-columns: 192px auto
+	grid-template-rows: -webkit-min-content -webkit-min-content auto -webkit-min-content
+	grid-template-rows: min-content min-content auto min-content
 	grid-template-areas: "header header" "title title" "aside main" "footer footer"
 
 footer
 	grid-area: footer
 	text-align: center
+	background-color: $subtle
 
 header
 	grid-area: header
+	background-color: $strong
+	padding: $padding
 
 main
 	grid-area: main
+	background-color: $subtle
 
 aside
 	grid-area: aside
 	text-align: right
+	background-color: $strong
+	padding: $padding
 
 h1
 	grid-area: title
