@@ -1,0 +1,4 @@
+# mirror to .dockerignore
+node_modules/
+build/
+# .gitignore only

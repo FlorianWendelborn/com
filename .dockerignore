@@ -1,0 +1,6 @@
+# mirror to .gitignore
+node_modules/
+build/
+# .dockerignore only
+license.md
+readme.md
